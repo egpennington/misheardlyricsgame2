@@ -30,7 +30,7 @@ const availableSongs = [
             Honey, Honey, Honey, Honey, Honey, Honey, Honey, Honey and the Treats, the Treats, the Treats
             Honey, Honey, Honey, Honey, Honey, Honey, Honey, Honey, Honey, Honey, Honey and the Treats
         `,
-        audio: "benny_and_the_jets.mp3",
+        audio: "https://open.spotify.com/embed/track/61lkEDcbFzyxBO16EBOLhI?si=dd9efad29a284244",
         spotifyEmbedURL: "https://open.spotify.com/embed/track/5Wj1rJnCLpMHdLaxsFtJLs?si=3e6896a8aa?utm_source=generator&theme=0"
 
     },
@@ -76,7 +76,7 @@ const availableSongs = [
             Oh, oh
             Oh, oh
         `,
-        // audio: "benny_and_the_jets.mp3",
+        audio: "https://open.spotify.com/embed/track/1oAKb1hnoazkw4Aaz7VVLI?si=3196380d1a654fbc",
         spotifyEmbedURL: "https://open.spotify.com/embed/track/4i4d0jN0NHIyJbZc28lkow?si=4c1e5473484f48ac"
     },
    
@@ -111,7 +111,7 @@ const availableSongs = [
             I say, me gotta go
             I say, me gotta go
         `,
-        // audio: "benny_and_the_jets.mp3",
+        audio: "https://open.spotify.com/embed/track/5gAYXQdlgjsl6HIle07sDq?si=3196380d1a654fbc",
         spotifyEmbedURL: "https://open.spotify.com/embed/track/3vwqigHwHd0GMaAtUo7PNH?si=9535c92c59274910"
     },    
 ];

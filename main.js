@@ -8,8 +8,11 @@ function playRandomSong() {
     correctLyrics = randomSong.lyrics;
 
     const spotifyIframe = document.getElementById("spotify-iframe");
+    const spofifyKarokeIframe = document.getElementById("spotify-karoke-iframe")
     spotifyIframe.src = randomSong.spotifyEmbedURL;
+    spotifyKarokeIframe.src = randomSong.audio;
     spotifyIframe.style.display = "block";
+    spotifyKarokeIframe.display = "block"
 
     document.getElementById("song-name").innerHTML = `<h2>${randomSong.name}</h2>`;
 }
@@ -24,8 +27,11 @@ function playSelectedSong(index) {
     correctLyrics = selectedSong.lyrics;
 
     const spotifyIframe = document.getElementById("spotify-iframe");
+    const spotifyKarokeIframe = document.getElementById("spotify-karoke-iframe")
     spotifyIframe.src = selectedSong.spotifyEmbedURL;
+    spotifyKarokeIframe.src = selectedSong.audio;
     spotifyIframe.style.display = "block";
+    spotifyKarokeIframe.style.display = "block"
 
     document.getElementById("song-name").innerHTML = `<h2>${selectedSong.name}</h2>`;
 

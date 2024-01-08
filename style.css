@@ -112,3 +112,7 @@ button {
     background: #fff;
     border: solid 1px #333;
 }
+
+.spotify-karoke-iframe {
+    margin-top: 20px;
+}
