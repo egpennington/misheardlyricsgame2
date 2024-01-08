@@ -7,6 +7,9 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, music, misheard lyrics">
     <meta name="author" content="pennington programming">
     <title>Misheard Lyrics Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -20,22 +23,23 @@
         <div class="jukebox-header">            
             <img class="logo" src="images/Mis2.png" alt="logo">
         </div>
-        
+
+        <p class="instructions">Listen to the song, jot down what you heard, and bring it to life with your own backing track!</p>
         <div class="song-list" id="song-list-container">
             <!-- Songs will be dynamically added here -->
         </div>
         <div class="now-playing">
             <h2>Now Playing</h2>
-            <p>Listen to the song and write down what you think you heard!</p>
-            <p>And then sing it with your own backing track</p>
             <div id="song-name"></div>
+
             <iframe id="spotify-iframe" class="spotify-iframe" src="" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="display: none;"></iframe>
         </div>
         <div class="game-container">
             <label for="user-input">Your guess:</label>
             <textarea class="input user-input" id="user-input" placeholder="Enter your guess and sing your lyrics to the music"></textarea>
 
-            <iframe id="spotify-karoke-iframe" class="spotify-karoke-iframe" src="" width="100%" height="100" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="display: none;"></iframe>
+            <h2 class="spotify-karoke-iframe" id="h2-karoke-iframe" style="display: none">Now, it's your time to shine! Sing your lyrics with the music</h2>
+            <iframe id="spotify-karoke-iframe" src="" width="100%" height="100" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="display: none;"></iframe>
 
             <button class="btn" onclick="checkGuess()">Submit</button>
             <div id="result-container" class="result-container"></div>

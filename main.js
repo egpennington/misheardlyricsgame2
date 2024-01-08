@@ -3,37 +3,31 @@ import { availableSongs } from "./songs.js";
 let correctLyrics;
 let currentTimeout;
 
-function playRandomSong() {
-    const randomSong = availableSongs[Math.floor(Math.random() * availableSongs.length)];
-    correctLyrics = randomSong.lyrics;
-
-    const spotifyIframe = document.getElementById("spotify-iframe");
-    const spofifyKarokeIframe = document.getElementById("spotify-karoke-iframe")
-    spotifyIframe.src = randomSong.spotifyEmbedURL;
-    spotifyKarokeIframe.src = randomSong.audio;
-    spotifyIframe.style.display = "block";
-    spotifyKarokeIframe.display = "block"
-
-    document.getElementById("song-name").innerHTML = `<h2>${randomSong.name}</h2>`;
-}
-
 function playSelectedSong(index) {
     if (index < 0 || index >= availableSongs.length) {
         console.error("Invalid song index.");
         return;
     }
 
+    document.getElementById("result-container").innerHTML = ""
+
     const selectedSong = availableSongs[index];
     correctLyrics = selectedSong.lyrics;
 
     const spotifyIframe = document.getElementById("spotify-iframe");
     const spotifyKarokeIframe = document.getElementById("spotify-karoke-iframe")
+    const h2KarokeIframe = document.getElementById("h2-karoke-iframe")
     spotifyIframe.src = selectedSong.spotifyEmbedURL;
     spotifyKarokeIframe.src = selectedSong.audio;
     spotifyIframe.style.display = "block";
     spotifyKarokeIframe.style.display = "block"
+    h2KarokeIframe.style.display = "block"
+
+
 
     document.getElementById("song-name").innerHTML = `<h2>${selectedSong.name}</h2>`;
+
+    document.getElementById("user-input").value = "";
 
     // Set a timeout to pause the song after 15 seconds
     currentTimeout = setTimeout(pauseSong, 15000);
