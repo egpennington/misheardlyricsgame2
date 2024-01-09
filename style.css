@@ -213,4 +213,5 @@ button {
 
 .giphy-embed {
     opacity: 0.4;
+    margin-bottom: -5px;
 }

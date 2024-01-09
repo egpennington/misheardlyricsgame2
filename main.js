@@ -28,11 +28,13 @@ function playSelectedSong(index) {
     const spotifyIframe = document.getElementById("spotify-iframe");
     const spotifyKarokeIframe = document.getElementById("spotify-karoke-iframe")
     const h2KarokeIframe = document.getElementById("h2-karoke-iframe")
+    const giphyEmbed = document.getElementById("giphy-embed")
     spotifyIframe.src = selectedSong.spotifyEmbedURL;
     spotifyKarokeIframe.src = selectedSong.audio;
     spotifyIframe.style.display = "block";
     spotifyKarokeIframe.style.display = "block"
     h2KarokeIframe.style.display = "block"
+    giphyEmbed.style.display = "block"
 
 
 
