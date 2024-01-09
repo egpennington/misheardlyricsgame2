@@ -30,17 +30,6 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-.jukebox-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    height: 175px;
-    padding: 20px;
-}
-
 p { 
     margin-top: 10px;
 }
@@ -143,6 +132,20 @@ button {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    background-color: #333;
+    color: #fff;
+    height: 250px;    
+}
+
+.jukebox-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 175px;
+    padding: 20px;
 }
 
 .about-modal {
@@ -201,7 +204,7 @@ button {
 
 .about {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-size: 1.3rem;
     font-family: var(--font-one);
     font-weight: bold;
