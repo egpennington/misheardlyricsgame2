@@ -109,7 +109,7 @@ button {
 
 .spotify-karoke-iframe {
     margin-top: 20px;
-    font-family: var(--font-one);
+    font-family: var(--font-two);
     font-size: 1rem;
 }
 
@@ -128,32 +128,20 @@ button {
 
 /* Navbar an Modal area */
 .navbar {
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
-    gap: 15px;
+    justify-content: space-around;
     background-color: #333;
-    color: #fff;
-    height: 250px;    
-}
-
-.jukebox-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    height: 175px;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .about-modal {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     max-height: 95%;
     width: 400px;
     overflow: auto;
@@ -205,13 +193,20 @@ button {
 .about {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: var(--font-one);
     font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    
 }
 
 .about:hover {
     box-shadow: 1px 2px 2px 5px red;
     border-radius: 50%;
-    padding: 5px 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.home:hover {
+    opacity: 0.7;
 }
