@@ -73,9 +73,10 @@ window.checkGuess = function() {
     });
 
     if (isCorrect) {
-        resultContainer.innerHTML = "<p>Correct! You got at least one sentence right!</p>";
+        resultContainer.innerHTML = `<p>Great job! You nailed at least one line. Keep going, you're on the right track!`
     } else {
-        resultContainer.innerHTML = "<p>Oops! That's not quite right. Try again!</p>";
+        resultContainer.innerHTML = `<p>Oops! While your lyrics may not match the original, your version is uniquely creative. Give it another shot!</p>
+        `
     }
 }
 
