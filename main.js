@@ -2,6 +2,17 @@ import { availableSongs } from "./songs.js";
 
 let correctLyrics;
 let currentTimeout;
+const aboutEl = document.getElementById("about-el")
+
+aboutEl.addEventListener("click", () => {
+    const aboutModalEl = document.getElementById("about-modal-el")
+    const aboutCloseEl = document.getElementById("about-close-el")
+    aboutModalEl.style.display = "block"
+
+    aboutCloseEl.addEventListener("click", () => {
+      aboutModalEl.style.display = "none"
+    })
+})
 
 function playSelectedSong(index) {
     if (index < 0 || index >= availableSongs.length) {

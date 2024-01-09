@@ -136,3 +136,79 @@ button {
     margin-right: auto;
     font-weight: bold;
 }
+
+/* Navbar an Modal area */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 95%;
+    width: 400px;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #212529;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.9;
+    z-index: 3;
+    position: relative;
+}
+
+.about-modal h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-inner {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-inner li {
+    padding: 8px 0;
+    margin: 20px 0;
+    width: 90%;
+}
+
+.about-modal p {
+    margin-top: 20px;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.about-close {
+    color: #FFCC68;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.about-close:hover {
+    font-size: 2.1rem;
+    opacity: 0.75;
+}
+
+.about {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.3rem;
+    font-family: var(--font-one);
+    font-weight: bold;
+}
+
+.about:hover {
+    box-shadow: 2px 2px 5px red;
+    border-radius: 50%;
+    padding: 5px 10px;
+}

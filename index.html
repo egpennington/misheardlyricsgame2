@@ -7,6 +7,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, music, misheard lyrics">
     <meta name="author" content="pennington programming">
     <title>Misheard Lyrics Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Rock+Salt&display=swap" rel="stylesheet">
@@ -19,9 +20,24 @@
 </head>
 <body>
     <div class="jukebox">
+
+        <nav class="navbar">
+            <a href="https://misheardlyricsgame2.netlify.app/">
+                <img src="/images/Mis.png" alt="misheard lyrics game Logo" class="nav-logo">
+                <a href="#" id="about-el" class="about">About</a>              
+            </a>
+        </nav>
         
-        <div class="jukebox-header">            
-            <img class="logo" src="images/Mis2.png" alt="logo">
+        <div class="about-modal" id="about-modal-el">
+            <i class="fa-regular fa-rectangle-xmark fa-xl about-close" id="about-close-el"></i>
+            <h2>Turn misheard lyrics into a hilarious jam session with friends</h2>
+            <h3>where laughter meets music in the ultimate party game experience!</h3>
+            <ul class="modal-inner">
+                <li>Choose a song and enjoy a 15-second preview.</li>
+                <li>Listen closely, jot down, or type the lyrics you hear.</li>
+                <li>Unleash your inner star by singing your lyrics over a personalized backing track.</li>
+            </ul>
+            <p>Turn any moment into a stage with your very own backing band. Let your voice shine and create laughter and fun with your friends!</p>                  
         </div>
 
         <p class="instructions">Listen to the song, jot down what you heard, and bring it to life with your own backing track!</p>
