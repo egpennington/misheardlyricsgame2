@@ -1,6 +1,7 @@
 :root {
     --font-one: 'Rock Salt', cursive;
     --font-two: 'Roboto', sans-serif;
+    --font-three: 'Chewy', system-ui;
 }
 
 * {
@@ -219,4 +220,52 @@ button {
 .giphy-embed {
     opacity: 0.4;
     margin-bottom: -5px;
+}
+
+.timed-modal {
+    display: none;
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 400px;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #212529;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 1.5rem;
+    opacity: 0.9;
+    z-index: 1;
+    line-height: 1.6;
+    margin-top: auto;
+    overflow-y: hidden;
+}
+
+.content-wrapper {
+    height: 100%;
+}
+
+.timed-modal p {
+    font-family: var(--font-two);
+    font-weight: bold;
+    color: #FFCC68;
+    letter-spacing: 1px;
+    animation: fadeInUp 1s ease;
+    margin-top: 30px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

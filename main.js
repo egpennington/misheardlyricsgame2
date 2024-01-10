@@ -3,6 +3,20 @@ import { availableSongs } from "./songs.js";
 let correctLyrics;
 let currentTimeout;
 const aboutEl = document.getElementById("about-el")
+const timedModal = document.getElementById("timed-modal")
+const timedCloseEl = document.getElementById("timed-close-el")
+
+setTimeout(function(){
+    timedModal.style.display = "block"
+    }, 1500)
+
+setTimeout(function() {
+    timedModal.style.display = "none"
+}, 6000)
+
+timedCloseEl.addEventListener("click", () => {
+    timedModal.style.display = "none";
+})
 
 aboutEl.addEventListener("click", () => {
     const aboutModalEl = document.getElementById("about-modal-el")
