@@ -168,44 +168,6 @@ button {
     font-size: 1.4rem;
 }
 
-
-
-/* .about-modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 600px;
-    width: 400px;
-    overflow: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px 2px #666;
-    background-color: #212529;
-    color: whitesmoke;
-    padding: 20px;
-    text-align: center;
-    opacity: 0.9;
-    z-index: 1;
-}
-
-.about-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    text-align: center;
-    border: red 1px solid;
-
-} */
-
-/* .about-modal p {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-   margin: auto;
-} */
-
 .about-close {
     color: #FFCC68;
     position: absolute;
@@ -274,12 +236,6 @@ button {
     letter-spacing: 1px;
     animation: fadeInUp 1s ease;
     margin-top: 30px;
-}
-
-.content-wrapper .content-wrapper-inner {
-    display: flex;
-    border: red solid 5px;
-    background: red;
 }
 
 @keyframes fadeInUp {

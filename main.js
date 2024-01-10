@@ -12,7 +12,7 @@ setTimeout(function(){
 
 setTimeout(function() {
     timedModal.style.display = "none"
-}, 6000)
+}, 8000)
 
 timedCloseEl.addEventListener("click", () => {
     timedModal.style.display = "none";
