@@ -95,7 +95,8 @@ button {
     resize: none;
     overflow: auto;
     padding: 10px;
-    width: 80%; /* Adjust the width as needed */
+    height: 100px;
+    width: 80%;
 }
 
 .btn {
